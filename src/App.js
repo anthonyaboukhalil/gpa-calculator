@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { Slider } from "./Slider.js";
+import { Slider } from "./components/Slider.js";
+import { useSelector } from "react-redux";
 function App() {
   return (
     <div className="container">
@@ -9,14 +10,6 @@ function App() {
           <div className="container d-flex flex-column   ">
             <div>
               <Slider label="Math" />
-            </div>
-            <div>
-              {" "}
-              <Slider label="Science" />
-            </div>
-            <div>
-              {" "}
-              <Slider label="Languages" />
             </div>
           </div>
         </div>
