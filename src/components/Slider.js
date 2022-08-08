@@ -14,7 +14,6 @@ export const Slider = ({ label, grade = 0 }) => {
   const handleClick = () => {
     dispatch(addSubject({ name: "math", grade: 80 }));
     dispatch(addSubject({ name: "sciences", grade: 90 }));
-    console.log(subjects);
   };
 
   return (
@@ -23,7 +22,6 @@ export const Slider = ({ label, grade = 0 }) => {
       <button
         onClick={() => {
           dispatch(deleteSubject({ name: "math", grade: 80 }));
-          console.log(subjects);
         }}
       >
         Remove

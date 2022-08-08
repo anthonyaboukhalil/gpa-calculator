@@ -1,7 +1,6 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import { Slider } from "./components/Slider.js";
-import { useSelector } from "react-redux";
+import Subjects from "./components/Subjects.js";
 function App() {
   return (
     <div className="container">
@@ -10,6 +9,7 @@ function App() {
           <div className="container d-flex flex-column   ">
             <div>
               <Slider label="Math" />
+              <Subjects />
             </div>
           </div>
         </div>
