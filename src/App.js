@@ -1,16 +1,19 @@
 import React from "react";
 import { Slider } from "./components/Slider.js";
-import Subjects from "./components/Subjects.js";
+import DisplaySubjects from "./components/DisplaySubjects.js";
+import AddSubject from "./components/AddSubject.js";
+
+import bootstrap from "bootstrap";
 function App() {
   return (
     <div className="container">
       <div className="row">
         <div className="col-4 controls">
           <div className="container d-flex flex-column   ">
-            <div>
-              <Slider label="Math" />
-              <Subjects />
-            </div>
+            <AddSubject />
+
+            <Slider />
+            <DisplaySubjects />
           </div>
         </div>
         <div className="col-8 display">
