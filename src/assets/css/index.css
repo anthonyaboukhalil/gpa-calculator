@@ -8371,3 +8371,11 @@ textarea.form-control-lg {
 .controls {
   height: 100vh;
   background-color: #dee2e6; }
+
+#delete-btn:hover {
+  color: red; }
+
+#subject-label {
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem; }

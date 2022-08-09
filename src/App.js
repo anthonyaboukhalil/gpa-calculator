@@ -3,12 +3,13 @@ import React from "react";
 import DisplaySubjects from "./components/DisplaySubjects.js";
 import AddSubject from "./components/AddSubject.js";
 import DisplayGpa from "./components/DisplayGpa.js";
+import MyChart from "./components/MyChart.js";
 import bootstrap from "bootstrap";
 function App() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-4 controls">
+        <div className="col-4 controls overflow-auto">
           <div className="container d-flex flex-column   ">
             <AddSubject />
 
@@ -19,6 +20,7 @@ function App() {
           <div className="container">
             <div className="row">
               <DisplayGpa />
+              <MyChart />
             </div>
           </div>
         </div>
