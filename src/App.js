@@ -1,8 +1,8 @@
 import React from "react";
-import { Slider } from "./components/Slider.js";
+
 import DisplaySubjects from "./components/DisplaySubjects.js";
 import AddSubject from "./components/AddSubject.js";
-
+import DisplayGpa from "./components/DisplayGpa.js";
 import bootstrap from "bootstrap";
 function App() {
   return (
@@ -12,13 +12,14 @@ function App() {
           <div className="container d-flex flex-column   ">
             <AddSubject />
 
-            <Slider />
             <DisplaySubjects />
           </div>
         </div>
         <div className="col-8 display">
           <div className="container">
-            <div className="row justify-content-center">Center</div>
+            <div className="row">
+              <DisplayGpa />
+            </div>
           </div>
         </div>
       </div>

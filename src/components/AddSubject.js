@@ -44,6 +44,7 @@ const AddSubject = () => {
               className="form-control form-control-lg "
               type="text"
               value={name}
+              maxLength="12"
               placeholder="Enter Course Name"
               aria-label=".form-control-lg example"
               onChange={(event) => {

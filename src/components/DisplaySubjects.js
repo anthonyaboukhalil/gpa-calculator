@@ -22,6 +22,7 @@ const DisplaySubjects = () => {
         <div key={subject.name}>
           <label className="form-label">
             {subject.name.toUpperCase()}
+            <br />
             {subject.grade}
           </label>
           <input
