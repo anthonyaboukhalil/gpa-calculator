@@ -13,6 +13,7 @@ const AddSubject = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addSubject({ name: name, grade: 50 }));
+    setName("");
   };
   return (
     <>

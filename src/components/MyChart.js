@@ -2,7 +2,7 @@ import React from "react";
 import "chart.js/auto";
 import { Chart } from "react-chartjs-2";
 import { useSelector, useDispatch } from "react-redux";
-import { Hearts } from "react-loader-spinner";
+import DisplayGpa from "./DisplayGpa.js";
 const MyChart = () => {
   const subjects = useSelector((state) => state.subjects.subjects);
   const labels = subjects.map((subjects) => subjects.name);
@@ -21,18 +21,15 @@ const MyChart = () => {
       },
     ],
   };
+
   return labels.length > 0 ? (
-    <Chart type="doughnut" data={chartData} />
+    <>
+      <Chart type="doughnut" data={chartData} />
+      <DisplayGpa />
+    </>
   ) : (
     <div id="pre-chart">
-      <Hearts
-        height="200"
-        width="200"
-        radius="9"
-        color="red"
-        wrapperStyle
-        wrapperClass
-      />
+      <h1>Add a subject</h1>
     </div>
   );
 };

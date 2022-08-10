@@ -9,7 +9,12 @@ const DisplayGpa = () => {
   let gpa = arr / subjects.length;
   gpa < 1 ? (gpa = 0) : (gpa = gpa);
 
-  return <div id="gpa">{gpa ? gpa.toFixed(1) : 0}</div>;
+  return (
+    <div id="gpa">
+      <h1>GPA</h1>
+      <h1>{gpa ? gpa.toFixed(1) : 0}</h1>
+    </div>
+  );
 };
 
 export default DisplayGpa;
