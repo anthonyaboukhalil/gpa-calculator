@@ -20,7 +20,9 @@ function App() {
           <div className="container">
             <div className="row">
               <DisplayGpa />
-              <MyChart />
+              <div id="chart">
+                <MyChart />
+              </div>
             </div>
           </div>
         </div>

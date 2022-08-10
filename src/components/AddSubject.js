@@ -17,7 +17,7 @@ const AddSubject = () => {
   return (
     <>
       <button
-        className="btn btn-dark"
+        className="btn btn-dark mt-3"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#collapseExample"
