@@ -8380,5 +8380,14 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   letter-spacing: 0.1rem; }
 
-#chart {
-  margin-top: -1rem; }
+#pre-chart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#gpa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }

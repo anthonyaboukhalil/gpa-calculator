@@ -9,17 +9,18 @@ function App() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-4 controls overflow-auto">
+        <div className="col-6 col-sm-4 controls overflow-auto">
           <div className="container d-flex flex-column   ">
             <AddSubject />
 
             <DisplaySubjects />
           </div>
         </div>
-        <div className="col-8 display">
+        <div className="col-6 col-sm-8 display overflow-auto position-relative">
           <div className="container">
             <div className="row">
               <DisplayGpa />
+
               <div id="chart">
                 <MyChart />
               </div>

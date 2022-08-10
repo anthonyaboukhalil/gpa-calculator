@@ -8,7 +8,8 @@ const DisplayGpa = () => {
     .reduce((prev, curr) => prev + curr, 0);
   let gpa = arr / subjects.length;
   gpa < 1 ? (gpa = 0) : (gpa = gpa);
-  return <div>Gpa is : {gpa ? gpa.toFixed(1) : 0}</div>;
+
+  return <div id="gpa">{gpa ? gpa.toFixed(1) : 0}</div>;
 };
 
 export default DisplayGpa;

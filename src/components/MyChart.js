@@ -2,11 +2,12 @@ import React from "react";
 import "chart.js/auto";
 import { Chart } from "react-chartjs-2";
 import { useSelector, useDispatch } from "react-redux";
+import { Hearts } from "react-loader-spinner";
 const MyChart = () => {
   const subjects = useSelector((state) => state.subjects.subjects);
-
+  const labels = subjects.map((subjects) => subjects.name);
   const chartData = {
-    labels: subjects.map((subjects) => subjects.name),
+    labels: labels,
     datasets: [
       {
         label: "Subjects Dataset",
@@ -20,8 +21,20 @@ const MyChart = () => {
       },
     ],
   };
-
-  return <Chart type="doughnut" data={chartData} />;
+  return labels.length > 0 ? (
+    <Chart type="doughnut" data={chartData} />
+  ) : (
+    <div id="pre-chart">
+      <Hearts
+        height="200"
+        width="200"
+        radius="9"
+        color="red"
+        wrapperStyle
+        wrapperClass
+      />
+    </div>
+  );
 };
 
 export default MyChart;
