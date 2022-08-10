@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+The goal of this web app is to convert traditional percentage grades into a GPA while displaying a visual result in a dynamic chart.
+
+Live Link:
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
