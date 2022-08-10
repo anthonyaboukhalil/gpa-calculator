@@ -1,10 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  addSubject,
-  deleteSubject,
-  changeGrade,
-} from "../features/subjectsSlice";
+import { deleteSubject, changeGrade } from "../features/subjectsSlice";
 
 const DisplaySubjects = () => {
   const dispatch = useDispatch();

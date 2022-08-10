@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 
-import { useSelector, useDispatch } from "react-redux";
-import {
-  addSubject,
-  deleteSubject,
-  changeGrade,
-} from "../features/subjectsSlice";
+import { useDispatch } from "react-redux";
+import { addSubject } from "../features/subjectsSlice";
 
 const AddSubject = () => {
   const [name, setName] = useState("");

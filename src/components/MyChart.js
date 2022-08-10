@@ -1,7 +1,7 @@
 import React from "react";
 import "chart.js/auto";
 import { Chart } from "react-chartjs-2";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import DisplayGpa from "./DisplayGpa.js";
 const MyChart = () => {
   const subjects = useSelector((state) => state.subjects.subjects);
